@@ -8,7 +8,7 @@ Instrucciones de USO:
 3. Desactivara y generara los registros necesarios que comprueba el actualizador de windows 11 para que te deje realizarlo.
 4. En caso de que no te deje actualizar, descarga la ISO oficial de Windows 11 ejecutala y te dejara instalarla sin problema.
 
-# Windows-11-Bypass Ingles
+# Windows-11-Bypass English
 With this tool you can upgrade from windows 10 to windows 11 without the need to reinstall the operating system.
 
 Instructions for use:
