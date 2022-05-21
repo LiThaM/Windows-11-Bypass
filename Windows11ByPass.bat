@@ -29,7 +29,7 @@ echo KKKKKKKKKK KKK KKKKKKKK KKK KKK KKK KKK KKKKKKKKK#
 echo KKKKKKKKKK KKK KKKKKKKK KKK KKK KKK KK fKKKKKKKKK#
 echo KKKKKKKKKK KKK KKKK KKK KKK KKK KKK   fKKKKKKKKKK#
 echo KKKKKKKKKK KKK EKKK KKK KKK KKK KKK KKKKKKKKKKKKK#
-echo KKKKKKKKKK KKK,  :  KKK KKK KKK KKK KKKKKKKKKKKKK#
+echo KKKKKKKKKK KKK,     KKK KKK KKK KKK KKKKKKKKKKKKK#
 echo KKKKKKKKKKKKKKKKKDKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK#
 echo.
 echo  Repo: https://github.com/LiThaM/Windows-11-Bypass
@@ -38,18 +38,18 @@ pause
 echo Bypass para Windows 11:
 echo.
 echo  * Comprobacion del CPU / Bypass CPU Check 
-echo  * Comprobacion de Almacenamiento /Bypass Storage Check 
-echo  * Comprobacion de Ram / Bypass RAM Check
-echo  * Comprobacion del TPM /  Bypass TPM Check
-echo  * Comprobacion de Arranque Seguro /  Bypass SecureBoot Check
-echo  * Habilito actualizacion para equpos no soportados / Allow Upgrade With Unsupported TPM or CPU
-echo.
 reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig /v BypassCPUCheck /f /t REG_DWORD /d 00000001
+echo  * Comprobacion de Almacenamiento /Bypass Storage Check 
 reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig /v BypassStorageCheck /f /t REG_DWORD /d 00000001
+echo  * Comprobacion de Ram / Bypass RAM Check
 reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig /v BypassRAMCheck /f /t REG_DWORD /d 00000001
+echo  * Comprobacion del TPM /  Bypass TPM Check
 reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig /v BypassTPMCheck /f /t REG_DWORD /d 00000001
+echo  * Comprobacion de Arranque Seguro /  Bypass SecureBoot Check
 reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig /v BypassSecureBootCheck /f /t REG_DWORD /d 00000001
+echo  * Habilito actualizacion para equpos no soportados / Allow Upgrade With Unsupported TPM or CPU
 reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup /v AllowUpgradesWithUnsupportedTPMOrCPU /f /t REG_DWORD /d 00000001
+echo.
 echo.
 pause && cls
 goto :eof
